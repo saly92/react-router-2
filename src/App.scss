@@ -1,0 +1,68 @@
+body {
+	background-color: #333;
+	color: #ccc;
+	padding: 20px;
+	font-size: 1.7rem;
+.page_books{
+	
+	 a{
+		color: #aaa;
+			text-decoration: none;
+	}
+}
+
+	nav {
+		a  {
+			color: #aaa;
+			text-decoration: none;
+		}
+
+		a.active {
+			color: yellow;
+		}
+	}
+
+	.searchArea {
+		input {
+			font-size: 1.5rem;
+		}
+		button {
+			font-size: 1.5rem;
+		}
+	}
+
+	.books {
+		.book {
+			background-color: #444;
+			margin: 0 0 10px 0;
+			padding: 20px;
+			border-radius: 5px;
+			display: flex;
+
+			.image {
+				img {
+					height: 150px;
+				}
+			}
+
+			.info {
+				margin: 0 0 0 10px;
+				.title a {
+					font-size: 1.4rem;
+					color: white;
+					text-decoration: none;
+				}
+
+				.author {
+					font-size: 1.2rem;
+					color: rgb(225, 225, 110);
+				}
+
+				.authorNotFound {
+					font-size: 1.2rem;
+					color: red;
+				}
+			}
+		}
+	}
+}
