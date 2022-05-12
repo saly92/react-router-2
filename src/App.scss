@@ -3,11 +3,29 @@ body {
 	color: #ccc;
 	padding: 20px;
 	font-size: 1.7rem;
+
+
+	.fantasy{
+
+	margin:0   40px ;
+
+	}
 .page_books{
+	
+	li{
+		display: inline;
+		
+		
+		
+	}
 	
 	 a{
 		color: #aaa;
 			text-decoration: none;
+			margin: 0 20px  0 0;
+	}
+	a:hover{
+		color: rgb(183, 108, 108);
 	}
 }
 

@@ -1,13 +1,13 @@
 import { BookGroupFantasy } from "../components/BookGroupFantasy";
 import { BookGroupPolitics } from "../components/BookGroupPolitics";
 import { BookGroupTechnology } from "../components/BookGroupTechnology";
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink, Routes, Route, Navigate } from "react-router-dom";
 
 export const PageBooks = () => {
   return (
     <div className="page_books">
-      <h2>Books</h2>
-      <p>this is the book page</p>
+      <h3>Books</h3>
+      
       <ul>
         <li>
           <NavLink to="fantasy">Fantasy</NavLink>
@@ -23,6 +23,7 @@ export const PageBooks = () => {
         <Route path="fantasy" element={<BookGroupFantasy />} />
         <Route path="politics" element={<BookGroupPolitics />} />
         <Route path="technology" element={<BookGroupTechnology />} />
+        <Route path="/" element={<Navigate to="fantasy" replace />} />
       </Routes>
     </div>
   );
